@@ -1,29 +1,58 @@
----
 banner:
   enable: true
   bg_image: images/bg.jpg
   bg_overlay: true
   title: Association My Harmony
-  content: L’association intervient auprès des victimes de violences, de harcèlements,
+  content: >-
+    L’association intervient auprès des victimes de violences, de harcèlements,
     de mutilations génitales et lutte contre la précarité menstruelle.
   button:
     enable: true
     label: Besoin de parler
-    link: https://assomyharmony.org/contact/
+    link: 'https://assomyharmony.org/contact/'
 atelier:
   enable: true
   title: Nos Permanences (sur rendez-vous)
   description: ''
-  content: "                              LES PERMANENCES ACTUELLES: (en vidéoconférence)\n\nSéances
-    de sophrologie:\n\nLe lundi de 14 h à 15 h.\nLe samedi 10h à 12 heures\n\n\nSéances
-    de psychothérapie:\n\nLe samedi et dimanche de 14 heures à 19 heures.\n\n\nPermanences
-    juridiques:\n\nLe samedi de 10h à 13h.\n\n\n\n                              PROCHAINEMENT:\n\n-
-    Stage Self Control / Self Defense (Plus d'info sur le blog)\n- Atelier bien être
-    \"moment pour soi \"</br>\n- Atelier confiance & estime de soi  </br> \n- Groupes
-    de parole </br> \n- Sophrologie en groupe </br>\n- Stage de théâtre (6 places)</br>
-    \n\n                    => L'objectif <=\n\n- Gestion de ses émotions \n- Gérer
-    son stress \n- Renforcer l'estime et la confiance en soi\n\n\n\n\nPOUR PLUS D'INFORMATIONS
-    CONSULTEZ NOTRE BLOG :)"
+  content: |2-
+                                  LES PERMANENCES ACTUELLES: (en vidéoconférence)
+
+    Séances de sophrologie:
+
+    Le lundi de 14 h à 15 h.
+    Le samedi 10h à 12 heures
+
+
+    Séances de psychothérapie:
+
+    Le samedi et dimanche de 14 heures à 19 heures.
+
+
+    Permanences juridiques:
+
+    Le samedi de 10h à 13h.
+
+
+
+                                  PROCHAINEMENT:
+
+    - Stage Self Control / Self Defense (Plus d'info sur le blog)
+    - Atelier bien être "moment pour soi "</br>
+    - Atelier confiance & estime de soi  </br> 
+    - Groupes de parole </br> 
+    - Sophrologie en groupe </br>
+    - Stage de théâtre (6 places)</br> 
+
+                        => L'objectif <=
+
+    - Gestion de ses émotions 
+    - Gérer son stress 
+    - Renforcer l'estime et la confiance en soi
+
+
+
+
+    POUR PLUS D'INFORMATIONS CONSULTEZ NOTRE BLOG :)
   image: images/aides.jpg
 prochainement:
   enable: true
@@ -31,53 +60,59 @@ prochainement:
   bg_overlay: true
   title: Prochainement
   description: ''
-  content: "#### Stage self-contrôle \n\nPour l’acquisition des bons réflexes ainsi
-    que toutes les règles de prévention à adopter dans divers lieux et diverses situations.\nSes
-    ateliers permettent aux femmes d'avoir une meilleure image d'elle-même et de révéler
-    leurs potentiels, mais aussi ces cours leur permettent de se reconstruire, de
-    retrouver confiance en elles et de regagner leurs autonomies. "
+  content: >-
+    #### Stage self-contrôle 
+
+
+    Pour l’acquisition des bons réflexes ainsi que toutes les règles de
+    prévention à adopter dans divers lieux et diverses situations.
+
+    Ses ateliers permettent aux femmes d'avoir une meilleure image d'elle-même
+    et de révéler leurs potentiels, mais aussi ces cours leur permettent de se
+    reconstruire, de retrouver confiance en elles et de regagner leurs
+    autonomies. 
   button:
     enable: true
     label: Contactez-nous pour plus d'informations
-    link: "/contact"
+    link: /contact
 missions:
   enable: true
   title: Nos actions
   description: ''
   service_item:
-  - icon: ion-coffee
-    name: Accompagnement social
-    content: ''
-  - icon: ion-ios-book-outline
-    name: Aide aux victimes de violences
-    content: ''
-  - name: Aide aux victimes de mutilations génitales
-    icon: ion-ios-book-outline
-    content: ''
-  - icon: ion-woman
-    name: Lutte contre la précarité menstruelle
-    content: ''
-  - icon: ion-speakerphone
-    name: Prévention
-    content: ''
-  - icon: ion-person
-    name: Écoute
-    content: ''
-  - icon: ion-ios-people
-    name: Atelier
-    content: ''
-  - icon: ion-ios-telephone
-    name: Accueil
-    content: ''
+    - icon: ion-coffee
+      name: Accompagnement social
+      content: ''
+    - icon: ion-ios-book-outline
+      name: Aide aux victimes de violences
+      content: ''
+    - name: Aide aux victimes de mutilations génitales
+      icon: ion-ios-book-outline
+      content: ''
+    - icon: ion-woman
+      name: Lutte contre la précarité menstruelle
+      content: ''
+    - icon: ion-speakerphone
+      name: Prévention
+      content: ''
+    - icon: ion-person
+      name: Écoute
+      content: ''
+    - icon: ion-ios-people
+      name: Atelier
+      content: ''
+    - icon: ion-ios-telephone
+      name: Accueil
+      content: ''
 chiffres:
   title: Les chiffres
   chiffre:
-  - années: En 2019
-    décès: "149"
-    texte: femmes tuées par leur conjoint ou ex-conjoint.
-  - années: En 2020
-    décès: "91"
-    texte: femmes tuées par leur conjoint ou ex-conjoint.
+    - années: En 2019
+      décès: '149'
+      texte: femmes tuées par leur conjoint ou ex-conjoint.
+    - années: En 2020
+      décès: '91'
+      texte: femmes tuées par leur conjoint ou ex-conjoint.
 cta:
   enable: true
   bg_image: images/call-to-action-bg.jpg
@@ -87,32 +122,32 @@ cta:
   button:
     enable: true
     label: Contactez-nous
-    link: "/contact"
+    link: /contact
   service_item:
-  - name: Violence
-    icon: ion-ios-telephone
-    color: light
-    content: 'Violences femmes infos : 3919'
-  - name: Hébergement
-    icon: ion-home
-    color: light
-    content: Pour un hébergement d’urgence composer le 115.
-  - name: SMS
-    icon: ion-chatbox-working
-    color: light
-    content: Demander de l’aide par SMS 114.
-  - name: Danger
-    icon: ion-iphone
-    color: ion-ios-telephone
-    content: Vous êtes en danger composez le 17.
-  - name: Accueil
-    icon: ion-person-stalker
-    color: light
-    content: Accueil de jour de 9 h à 18 heures.
-  - name: Astreintes
-    icon: ion-ios-clock
-    color: primary-darker
-    content: Astreintes de 18 h à 9 heures.
+    - name: Violence
+      icon: ion-ios-telephone
+      color: light
+      content: 'Violences femmes infos : 3919'
+    - name: Hébergement
+      icon: ion-home
+      color: light
+      content: Pour un hébergement d’urgence composer le 115.
+    - name: SMS
+      icon: ion-chatbox-working
+      color: light
+      content: Demander de l’aide par SMS 114.
+    - name: Danger
+      icon: ion-iphone
+      color: ion-ios-telephone
+      content: Vous êtes en danger composez le 17.
+    - name: Accueil
+      icon: ion-person-stalker
+      color: light
+      content: Accueil de jour de 9 h à 18 heures.
+    - name: Astreintes
+      icon: ion-ios-clock
+      color: primary-darker
+      content: Astreintes de 18 h à 9 heures.
 cta2:
   enable: true
   bg_image: images/call-to-action-bg.jpg
@@ -122,39 +157,50 @@ cta2:
   button:
     enable: true
     label: Dons
-    link: https://www.donnerenligne.fr/my-harmony/faire-un-don/2
+    link: 'https://www.donnerenligne.fr/my-harmony/faire-un-don/2'
 partenaires:
   enable: true
   title: Nos partenaires
   description: ''
   partenaires_item:
-  - image: images/olatanea.jpg
-    name: Ola ta Nea
-    content: 'Cette entreprise 100% solidaire vient en aide aux SDF. Elle confectionne
-      des kits composés de produits d’hygiène, de secours et de survie. Leurs kits
-      connaissent un franc succès et apportent une aide précieuse à bon nombre de
-      personnes en situation de précarité extrême.  De plus, cette entreprise veut
-      apporter une solution durable à ces personnes. Pour cela, elle a mis en place
-      diverses formations afin de les aider pour une embauche future. L’entreprise
-      elle-même espère recruter dans un premier temps deux personnes cette année et
-      revoir ce chiffre à la hausse au fil du temps.  '
-    texte: Grâce à leur don de 20 kits d'hygiène, My Harmony va pouvoir accentuer
-      son soutien aux victimes suivies par l'association.
-    site: Soutenez cette entreprise 100% solidaire via les réseaux et/ou leur site
-      internet https://olatanea.com .
-  - image: images/4murs.jpg
-    name: Entre 4 murs
-    content: Cette association créée par 11 étudiantes de l’ICART Paris, composée
-      de danseuses et danseurs professionnel(le)s ou amateur(trice)s dénonce les violences
-      conjugales à travers la danse. Utilisant divers styles de danses, ils abordent
-      les violences conjugales autrement qu’avec les mots afin de sensibiliser un
-      maximum de personnes à ce fléau. Leurs chorégraphies nous content l’histoire
-      de ces victimes.
-    texte: 'Via des vidéos fortes de sens que cette association publies (sur les réseaux
-      et internet), elle appuie son soutien à My Harmony. Grâce à elle, notre message
-      atteint d’autres horizons. '
-    site: Rendez-vous sur leur site www.entre4mursprod.fr ou bien sur les réseaux
-      sociaux pour les soutenir.
+    - image: images/olatanea.jpg
+      name: Ola ta Nea
+      content: >-
+        Cette entreprise 100% solidaire vient en aide aux SDF. Elle confectionne
+        des kits composés de produits d’hygiène, de secours et de survie. Leurs
+        kits connaissent un franc succès et apportent une aide précieuse à bon
+        nombre de personnes en situation de précarité extrême.  De plus, cette
+        entreprise veut apporter une solution durable à ces personnes. Pour
+        cela, elle a mis en place diverses formations afin de les aider pour une
+        embauche future. L’entreprise elle-même espère recruter dans un premier
+        temps deux personnes cette année et revoir ce chiffre à la hausse au fil
+        du temps.  
+      texte: >-
+        Grâce à leur don de 20 kits d'hygiène, My Harmony va pouvoir accentuer
+        son soutien aux victimes suivies par l'association.
+      site: >-
+        Soutenez cette entreprise 100% solidaire via les réseaux et/ou leur site
+        internet https://olatanea.com .
+    - image: images/4murs.jpg
+      name: Entre 4 murs
+      content: >-
+        Cette association créée par 11 étudiantes de l’ICART Paris, composée de
+        danseuses et danseurs professionnel(le)s ou amateur(trice)s dénonce les
+        violences conjugales à travers la danse. Utilisant divers styles de
+        danses, ils abordent les violences conjugales autrement qu’avec les mots
+        afin de sensibiliser un maximum de personnes à ce fléau. Leurs
+        chorégraphies nous content l’histoire de ces victimes.
+      texte: >-
+        Via des vidéos fortes de sens que cette association publies (sur les
+        réseaux et internet), elle appuie son soutien à My Harmony. Grâce à
+        elle, notre message atteint d’autres horizons. 
+      site: >-
+        Rendez-vous sur leur site www.entre4mursprod.fr ou bien sur les réseaux
+        sociaux pour les soutenir.
+    - name: lorem-ipsum
+      content: lorem-ipsum
+      texte: lorem-ipsum
+      site: lorem-ipsum
 Partenaires:
   enable: false
   title: ''
