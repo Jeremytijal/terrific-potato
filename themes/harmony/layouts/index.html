@@ -1,0 +1,130 @@
+{{ define "main" }}
+	{{- partial "modal.html" . -}}
+
+{{ $data := index site.Data site.Language.Lang }}
+
+<!-- banner -->
+{{ if $data.homepage.banner.enable }}
+{{ with $data.homepage.banner }}
+<section class="slider {{if .bg_overlay}}overly{{end}}" style="background-image: url('{{ .bg_image | absURL }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>{{ .title | markdownify }}</h1>
+          <p>{{ .content | markdownify }}</p>
+          {{ if .button.enable }}
+          {{ with .button }}
+          <a href="{{ .link | relLangURL }}" target="_blank" class="btn btn-main animated fadeInUp">{{ .label }}</a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /banner -->
+
+
+<!-- Service -->
+{{ if $data.homepage.missions.enable }}
+{{ partial "service.html" . }}
+{{ end }}
+<!-- /service -->
+
+
+
+{{ if $data.homepage.atelier.enable }}
+{{ with $data.homepage.atelier }}
+<!-- about -->
+<section class="about section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>{{ .title | markdownify }}</h2>
+          </div>
+          <p> {{ .content | markdownify }} </p>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <div class="block">
+          <img src="{{ .image | relURL }}" class="img-responsive" alt="Img">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about -->
+{{ end }}
+{{ end }}
+
+{{ with $data.homepage.chiffres }}
+<section class="section-sm5">
+  <div class="container">
+<div class="row text-center">
+<h1>{{ .title }}</h1>
+{{ range .chiffre }}
+  <div class="col-md-6">
+
+    <div class="counter-item">
+      <h5>{{ .années }}</h5>
+      <h1 class="count" data-count="{{ .décès }}">0</h1>
+      <span>{{ .texte }}</span>
+    </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+{{ end }}
+
+
+{{ if $data.homepage.prochainement.enable }}
+{{ with $data.homepage.prochainement }}
+<!-- portfolio -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 order-2 bg-3">
+        <div class="block">
+        <img src="{{ .bg_image | absURL}}" class="img-responsive bg-3">
+  </div>
+</div>
+      <div class="col-md-6 order-1 feature2">
+        <h2 class="section-subtitle">{{ .title | markdownify }}</h2>
+        <p>{{ .content | markdownify }}</p>
+
+        {{ if .button.enable }}
+        {{ with .button }}
+        <button> <a href="{{ .link | relLangURL }}" class="btn btn-view-works">{{ .label }}</a>
+       </button>
+        {{ end }}
+        {{ end }}
+      </div>
+      </div>
+    </div>
+</section>
+<!-- /portfolio -->
+{{ end }}
+{{ end }}
+
+
+
+<!-- Call to action -->
+{{ if $data.homepage.cta.enable }}
+{{ partial "cta.html" . }}
+{{ end }}
+<!-- /Call to action -->
+
+<!-- Partenaires -->
+
+{{ partial "partenaires.html" . }}
+
+<!-- /partenaires -->
+
+
+{{ end }}

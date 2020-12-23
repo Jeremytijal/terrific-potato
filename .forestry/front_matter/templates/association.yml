@@ -1,0 +1,45 @@
+---
+label: Association
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: file
+  name: bg_image
+  label: bg_image
+- type: file
+  name: image
+  label: image
+- type: text
+  name: titre
+  label: titre
+- type: text
+  name: content
+  label: content
+- type: text
+  name: content2
+  label: content2
+- type: text
+  name: content3
+  label: content3
+- type: text
+  name: content4
+  label: content4
+- type: text
+  name: content5
+  label: content5
+- type: text
+  name: content6
+  label: content6
+- type: textarea
+  name: content7
+  label: content7
+- name: titre2
+  type: text
+  config:
+    required: false
+  label: Titre2

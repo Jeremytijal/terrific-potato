@@ -1,0 +1,60 @@
+########################### about service #############################
+about:
+  enable : true
+  title : "Creative UX/UI Design Agency"
+  content : ""
+  image : "images/company/company-group-pic.jpg"
+
+
+########################## featured service ############################
+featured_service:
+  enable : true
+  service_item:
+    # featured service item loop
+    - name : "Interface Design"
+      icon : "ion-erlenmeyer-flask"
+      color : "primary"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim impedit repudiandae omnis est temporibus."
+
+    # featured service item loop
+    - name : "Product Branding"
+      icon : "ion-leaf"
+      color : "primary-dark"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim impedit repudiandae omnis est temporibus."
+
+    # featured service item loop
+    - name : "Game Development"
+      icon : "ion-lightbulb"
+      color : "primary-darker"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim impedit repudiandae omnis est temporibus."
+
+
+############################# Service ###############################
+service:
+  enable : true
+  title : "Nos missions"
+  description : ""
+  service_item:
+    # service item loop
+    - icon : ion-coffee #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
+      name: Accompagnement social
+      content: "Procédures juridiques, dossiers logement, demande de prestations"
+
+    # service item loop
+    - icon : ion-ios-book-outline #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
+      name: Permanences juridiques
+      content: "Vos droits (tous les jeudis matins)"
+
+    # service item loop
+    - icon : ion-woman #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
+      name: Précarités menstruelles
+      content: "Distribution du kit sérénity pour toutes les femmes et étudiante qui rencontre des difficultés financières"
+
+
+############################# call to action #################################
+cta:
+  enable : true
+  # call to action content comes from "data/*/homepage.yml"
+cta2:
+  enable : true
+  # call to action content comes from "data/*/homepage.yml"

@@ -1,0 +1,20 @@
+---
+label: Violences
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: file
+  name: bg_image
+  label: bg_image
+- type: file
+  name: image
+  label: image
+pages:
+- content/english/mutilations/_index.md
+- content/english/service/_index.md
+- content/english/violences/_index.md

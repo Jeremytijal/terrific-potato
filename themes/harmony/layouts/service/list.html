@@ -1,0 +1,85 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index site.Data site.Language.Lang }}
+
+
+<section class="service-about section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2></h2>
+        <p class="mt-30">{{ .Content }}</p>
+      </div>
+      <div class="section">
+        <div class="col-md-6">
+        <div class="about-img">
+          <img class="img-responsive about-img" src="{{ .Params.Image }}">
+        </div>
+        </div>
+      <div class="contact-form">
+        <form name="kit" method="POST" action="/merci" netlify>
+          <div class="col-md-6 col-sm-12">
+
+            <div class="block">
+              <div class="form-group">
+                <input name="user_name" type="text" class="form-control" placeholder="Nom">
+              </div>
+              <div class="form-group">
+                <input name="user_prénom" type="text" class="form-control" placeholder="Prénom">
+              </div>
+              <div class="form-group">
+                <input name="user_prénom" type="text" class="form-control" placeholder="Date de naissance">
+              </div>
+              <div class="form-group">
+                <input name="user_prénom" type="text" class="form-control" placeholder="Numéro de téléphone">
+              </div>
+              <div class="form-group">
+                <input name="user_email" type="text" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group">
+              <label for="subject">Nombre de jours de cycle</label>
+              <div class="form-select-wrap">
+                <select name="subject" id="subject">
+                  <option value="">Merci de choisir</option>
+                  <option value="Serviette">26</option>
+                  <option value="Cup">28</option>
+                  <option value="Tampon">35</option>
+                </select>
+              </div>
+              </div>
+              <div class="form-group">
+              <label for="subject">Situation</label>
+              <input name="autre" type="text" class="form-control" placeholder="Étudiante, Bénéficiaires du RSA, Autre préciser">
+              </div>
+              <div class="form-group">
+              <label for="subject">Votre protection</label>
+              <div class="form-select-wrap">
+                <select name="subject" id="subject">
+                  <option value="">Merci de choisir</option>
+                  <option value="Serviette">Serviette</option>
+                  <option value="Cup">Cup</option>
+                  <option value="Tampon">Tampon</option>
+                  <option value="Culotte lavable">Culotte lavable</option>
+                </select>
+              </div>
+            </div>
+              <button class="btn-main" type="submit">Envoyer</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Call to action -->
+{{ if $data.service.cta.enable }}
+{{ partial "cta.html" . }}
+{{ end }}
+<!-- /Call to action -->
+
+{{ end }}

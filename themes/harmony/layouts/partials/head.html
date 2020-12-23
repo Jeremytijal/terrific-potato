@@ -1,0 +1,36 @@
+<head>
+  <meta charset="utf-8">
+  <title>{{ .Title }}</title>
+
+  {{ "<!-- mobile responsive meta -->" | safeHTML }}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+  {{ hugo.Generator }}
+
+  {{ "<!-- plugins -->" | safeHTML }}
+  {{ range site.Params.plugins.css }}
+  <link rel="stylesheet" href="{{ .link | absURL }}">
+  {{ end }}
+
+  {{ template "_internal/google_analytics.html" . }}
+
+  {{ "<!-- Main Stylesheet -->" | safeHTML }}
+  {{ $styles := resources.Get "scss/style.scss" | toCSS | minify }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+  <!-- Lunar CSS -->
+  <link rel="stylesheet" href="assets/css/lunar.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="assets/css/animate.min.css">
+
+  {{ "<!--Favicon-->" | safeHTML }}
+  <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
+  <link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
+  <script type="text/javascript">
+  var _iub = _iub || [];
+  _iub.csConfiguration = {"consentOnContinuedBrowsing":false,"whitelabel":false,"lang":"fr","siteId":1988191,"cookiePolicyId":75563805,"cookiePolicyUrl":"https://assomyharmony.org/politique", "banner":{ "acceptButtonDisplay":true,"customizeButtonDisplay":true,"acceptButtonColor":"#844567","acceptButtonCaptionColor":"white","customizeButtonColor":"#844567","customizeButtonCaptionColor":"white","rejectButtonDisplay":true,"rejectButtonColor":"#844567","rejectButtonCaptionColor":"white","position":"bottom","textColor":"black","backgroundColor":"white" }};
+  </script>
+  <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+</head>

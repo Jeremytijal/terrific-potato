@@ -1,0 +1,33 @@
+---
+label: Appels aux dons
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: file
+  name: bg_image
+  label: bg_image
+- type: file
+  name: image
+  label: image
+- type: file
+  name: image2
+  label: image2
+- type: text
+  name: titre
+  label: titre
+- type: textarea
+  name: content
+  label: content
+- type: text
+  name: titre2
+  label: titre2
+- type: textarea
+  name: content2
+  label: content2
+pages:
+- content/english/dons/_index.md

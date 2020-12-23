@@ -1,0 +1,59 @@
+---
+label: Blog post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: author
+  label: author
+- type: file
+  name: image
+  label: image
+- type: file
+  name: bg_image
+  label: bg_image
+- type: list
+  name: categories
+  label: categories
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: description
+  label: description
+- type: text
+  name: type
+  label: type
+pages:
+- content/english/blog/En finir avec l'excision.md
+- content/english/blog/alerte-confinement.md
+- content/english/blog/appel-a-la-solidarite.md
+- content/english/blog/contraception-gratuite-pour-les-moins-de-15-ans.md
+- content/english/blog/des-la-rentree-distribution-de-protections-hygienique.md
+- content/english/blog/dispositif-alerte-pharmacie.md
+- content/english/blog/formation-self-control-self-defense.md
+- content/english/blog/journee-internationale-pour-l-elimination-des-violences-a-l-egard-des-femmes.md
+- content/english/blog/l-endometriose-qu-est-ce-que-c-est.md
+- content/english/blog/la-vaginite-parlons-en.md
+- content/english/blog/latest-news-seances-de-sophrologie-en-video-conference.md
+- content/english/blog/le-planning-familial.md
+- content/english/blog/les-numeros-d-urgence.md
+- content/english/blog/les-violences-conjugales-faites-aux-hommes.md
+- content/english/blog/les-violences-economiques-et-administratives-la-quatrieme-facette-des-violences-conjugales..md
+- content/english/blog/les-violences-psychologiques.md
+- content/english/blog/mettre-des-mots-sur-ses-maux..md
+- content/english/blog/noel-approche-et-avec-lui-une-avalanche-de-surprises.md
+- content/english/blog/nouvelle-permanence-psy.md
+- content/english/blog/permanences-juridiques.md
+- content/english/blog/precarite-menstruelle.md
+- content/english/blog/reglement-du-concours-photo.md
+- content/english/blog/regles-douloureuses-parlons-en.md
+- content/english/blog/sang-des-regles-encore-tabou-aujourd-hui.md
+- content/english/blog/suite-a-l-annonce-du-couvre-couvre-feu.md
+- content/english/blog/violences-conjugales-sexuelles-un-veritable-fleau-passe-sous-silence.md
+- content/english/blog/violences-conjugales...et-les-enfants-dans-tout-ca.md

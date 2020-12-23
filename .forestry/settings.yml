@@ -1,0 +1,56 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: ''
+webhook_url: 
+sections:
+- type: document
+  path: data/en/popup.yml
+  label: Pop Up
+- type: document
+  path: content/english/dons/_index.md
+  label: Appels aux dons
+- type: document
+  path: content/english/mutilations/_index.md
+  label: Mutilations génitales
+- type: document
+  path: content/english/violences/_index.md
+  label: Les Violences
+- type: document
+  path: config.toml
+  label: Paramètres
+- type: document
+  path: data/en/homepage.yml
+  label: Accueil
+- type: document
+  path: content/english/about/_index.md
+  label: L'association
+- type: document
+  path: content/english/service/_index.md
+  label: Nos actions
+- type: directory
+  path: content/english/blog
+  label: Blog
+  create: all
+  match: "**/*"
+- type: document
+  path: content/english/contact/_index.md
+  label: Contact
+- type: document
+  path: content/english/mentions/_index.md
+  label: Mentions légales
+upload_dir: themes/harmony/static/images
+public_path: "/images"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_env:
+  - HUGO_ENV=staging
+  - HUGO_VERSION=0.71.1
+  preview_output_directory: public
+  preview_docker_image: forestryio/hugo:latest
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: hugo server -D -E -F --renderToDisk -d public
+version: 0.71.1

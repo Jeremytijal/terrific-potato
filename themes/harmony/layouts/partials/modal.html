@@ -1,0 +1,35 @@
+<!-- Pop-up -->
+{{ $data := index site.Data site.Language.Lang }}
+{{ with $data.popup.popup }}
+<div id="popup" class="modal">
+       <div class="modal-dialog modal-dialog-centered  ">
+                <div class="modal-content section-modal">
+                  <button type="button" class="close light" data-dismiss="modal"
+                          aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+                 <div class="modal-header text-center">
+                      <h2 style="color:white"> {{ .titre | markdownify }}</h2>
+                       </div>
+                    <div class="modal-body text-center">
+                      <p style="color:white"> {{ .texteA | markdownify }}</p>
+<p style="color:white">
+{{ .texteB | markdownify }}</p>
+<p style="color:white">
+{{ .texteC | markdownify }}</p>
+<p style="color:white">
+{{ .texteD | markdownify }}</p>
+<p style="color:white">
+{{ .texteE | markdownify }}</p>
+                      <p style="color:white">
+                      {{ .texteF  }}
+                      </p>
+                       </div>
+                    <div class="modal-footer">
+                      <p style="color:white"> {{ .texteG | markdownify }}</p>
+                       </div>
+
+                </div>
+       </div>
+</div>
+{{ end }}
