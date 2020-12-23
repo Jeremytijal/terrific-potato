@@ -197,10 +197,6 @@ partenaires:
       site: >-
         Rendez-vous sur leur site www.entre4mursprod.fr ou bien sur les réseaux
         sociaux pour les soutenir.
-    - name: lorem-ipsum
-      content: lorem-ipsum
-      texte: lorem-ipsum
-      site: lorem-ipsum
 Partenaires:
   enable: false
   title: ''
